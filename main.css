@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+* {
+  text-align: center;
+}
+
+.container {
+  max-width: 310px !important;
+  margin: 4% auto 4% auto;
+  background-color: #d6cbd3;
+  padding-top: 15px;
+  border-radius: 10px;
+    box-shadow: 2px 1px 4px #222222;
+
+/*   font-family: 'Audiowide', cursive; */
+ }
+
+.row {
+  max-height: 60px;
+  height: 400px
+}
+#calcAnswer {
+  background-color: #deeaee;
+  height: 45px;
+  border-radius: 10px;
+  font-family: 'Audiowide', cursive;
+  font-size: 22px;
+}
+#calcInput {
+  background-color: #deeaee;
+  height: 22px;
+  border-radius: 5px;
+  font-family: 'Audiowide', cursive;
+  font-size: 22px;
+}
+
+.p {
+  font-family: 'Audiowide', cursive;
+  font-size: 30px;
+  color: red;
+}
+
+.btn {
+  color: salmon;
+  box-shadow: 1px 1px 5px #888888;
+  font-family: 'Audiowide', cursive;
+
+}

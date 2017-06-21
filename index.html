@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+  <div class="container" id="calculator">
+
+    <div class="row">
+      <div class="col">
+        <form>
+        <input type="text" id="calcAnswer" size='16' disabled value='0'>
+        </form>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col">
+        <form>
+        <input type="text" id="calcInput" size='16' disabled>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><input type="button" class="btn btn-primary" value="C" id="clearBtn" onclick="clearInput()">
+      </div>
+      <div class="col-md-3"><input type="button" class="btn btn-primary" value="CE" id="clearBtnByOne" onclick="clearInputByOne()">
+      </div>
+
+      <div class="col-md-6" id="logo">
+        <span class="p">
+          + - / *
+        </span>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="1" id='one' onclick="writeInput('1')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="2" id="two" onclick="writeInput('2')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="3" id="three" onclick="writeInput('3')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="/" id="divideBy" onclick="writeInput(' / ')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="4" id="four" onclick="writeInput('4')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="5" id="five" onclick="writeInput('5')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="6" id="six" onclick="writeInput('6')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="-" id="subtractBy" onclick="writeInput(' - ')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="7" id="seven" onclick="writeInput('7')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="8" id="eight" onclick="writeInput('8')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="9" id="nine" onclick="writeInput('9')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="+" id="addBy" onclick="writeInput(' + ')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="0" id="zero" onclick="writeInput('0')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="." id="decimal" onclick="writeInput('.')">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="=" id="equalTo" onclick="sum()">
+      </div>
+      <div class="col">
+        <input type="button" class="btn btn-primary" value="*" id="timesBy" onclick="writeInput(' * ')">
+      </div>
+    </div>
+
+
+  </div>
+
+    <script src="main.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+  </body>
+</html>
