@@ -9,7 +9,7 @@ function clearInput() {
   var clearScr = document.getElementById('calcInput')
   clearScr.value = "";
   var clearAns = document.getElementById('calcAnswer')
-  clearAns.value = "";
+  clearAns.value = "0";
 }
 
 function clearInputByOne() {
