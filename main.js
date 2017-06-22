@@ -22,6 +22,8 @@ function sum() {
   x = screen.value;
   x = eval(x);
   answer.value = x;
+  screen.value = "";
+
 }
 
 function calcHistory () {
