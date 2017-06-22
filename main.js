@@ -17,7 +17,7 @@ function clearInputByOne() {
   document.getElementById('calcInput').value =
   subByOne.substr(0,subByOne.length - 1);
 }
-
+//added clear screen line 24
 function sum() {
   x = screen.value;
   x = eval(x);
