@@ -15,18 +15,13 @@ function clearInput() {
 function clearInputByOne() {
   var subByOne = document.getElementById('calcInput').value;
   document.getElementById('calcInput').value =
-  subByOne.substr(0,subByOne.length - 1);
+  subByOne.substr(0, subByOne.length - 1);
 }
-//added clear screen line 24
+
 function sum() {
   x = screen.value;
   x = eval(x);
+
   answer.value = x;
   screen.value = "";
-}
-
-function calcHistory () {
-  x = screen.value;
-  x = eval(x);
-  screen.value = x;
 }
